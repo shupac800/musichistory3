@@ -6,16 +6,17 @@ var songArtistAlbumRef = document.getElementById("songArtistAlbum")
 
 addMusicViewRef.classList.add("nodisplay"); // start in listMusicView
 
-navRefs[0].addEventListener("click",function(e) {
+navRefs[0].addEventListener("click",function(e) { // clicked on Add Music?
   e.preventDefault();
-  console.log("clicked on View Music");
   changeSelectedNav(0); // 0 = ViewMusic
+  inputFieldValues[0].value = "";
+  inputFieldValues[1].value = "";
+  inputFieldValues[2].value = "";
   listMusicViewRef.classList.remove("nodisplay");
   addMusicViewRef.classList.add("nodisplay");
 });
-navRefs[1].addEventListener("click",function(e) {
+navRefs[1].addEventListener("click",function(e) { // clicked on View Music?
   e.preventDefault();
-  console.log("clicked on Add Music");
   changeSelectedNav(1); // 1 = AddMusic
   listMusicViewRef.classList.add("nodisplay");
   addMusicViewRef.classList.remove("nodisplay");
