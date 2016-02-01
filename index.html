@@ -1,0 +1,109 @@
+<!-- pointless comment here -->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div id="container">
+
+    <nav>
+      <ul>
+        <li class="navItem"><a href="" class="nav-selected">View Music</a></li>
+        <li class="navItem"><a href="">Add Music</a></li>
+        <li class="navItem last-item"><a href="">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div id="listMusicView">
+      <div class="left-box">
+        <br>
+
+        <label for="song-length">Song Length:<br></label>
+           <input type="range" name="song-length" min="0" max="10" step="0.1" value="5">
+        <br><br>
+
+        <label for="artist-name">Artist:<br></label>
+        <select id="artist-name" name="type">
+          <option>Thomas Dolby</option>
+          <option>The Police</option>
+          <option>The Knack</option>
+          <option>Joe Satriani</option>
+        </select>
+        <br><br>
+
+        <label for="album-name">Album:<br></label>
+        <select id="album-name" name="type">
+          <option>The Golden Age of Wireless</option>
+          <option>Ghost in the Machine</option>
+          <option>The Knack</option>
+          <option>Surfing With the Alien</option>
+        </select>
+        <br><br>
+
+        <legend>Genre:</legend>
+
+        <div id="buttons-left-column">
+          <input type="checkbox" id="Rock" name="genre-type" value="Rock">Rock<br>
+          <input type="checkbox" id="Pop" name="genre-type" value="Pop">Pop<br>
+          <input type="checkbox" id="Blues" name="genre-type" value="Blues">Blues<br>
+        </div>
+
+        <div id="buttons-right-column">
+          <input type="checkbox" name="genre-type" value="Classical">Classical <br>
+          <input type="checkbox" name="genre-type" value="Jazz">Jazz<br>
+          <input type="checkbox" name="genre-type" value="Hip-Hop">Hip-Hop<br>
+        </div>
+
+        <br><br>
+        <button id="filter-button" type="button">Filter</button>
+
+      </div>
+
+      <div class="right-box">
+    	  <ul id="songArtistAlbum">
+          <li class="song-title">She Blinded Me With Science</li>
+            <ul class="song-details">
+              <li>Thomas Dolby</li>
+              <li>The Golden Age of Wireless</li>
+              <li class="last-item">Synth Pop</li>
+            </ul>
+          <li class="song-title">Spirits in the Material World</li>
+            <ul class="song-details">
+              <li>The Police</li>
+              <li>Ghost in the Machine</li>
+              <li class="last-item">Pop</li>
+            </ul>
+          <li class="song-title">My Sharona</li>
+            <ul class="song-details">
+              <li>The Knack</li>
+              <li>The Knack</li>
+              <li class="last-item">Pop</li>
+            </ul>
+          <li class="song-title">Ice 9</li>
+            <ul class="song-details">
+              <li>Joe Satriani</li>
+              <li>Surfing With the Alien</li>
+              <li class="last-item">Instrumental Rock</li>
+            </ul>
+        </ul>      
+      </div>
+    </div> <!-- end of list_music_view -->
+
+  <div id="addMusicView">
+    <label for name="artist_name">Artist:</label>
+    <input type="text" name="artist_name" class="inputField">
+    <label for name="song_name">Song:</label>
+    <input type="text" name="song_name" class="inputField">
+    <label for name="album_name">Album:</label>
+    <input type="text" name="album_name" class="inputField">
+    <button value="add" id="add_button">Add</button>
+  </div>
+
+  </div> <!-- container -->
+  <script src = "javascripts/js103.js"></script>
+</body>
