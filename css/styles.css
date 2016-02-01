@@ -115,3 +115,23 @@ input[type="range"] {
 .nodisplay {
   display: none;
 }
+
+#addMusicView label {
+  clear: left;
+  display: inline-block;
+  margin-left: 30%;
+  width: 60px;
+  float: left;
+}
+
+#addMusicView input {
+  display: inline-block;
+  float: left;
+  margin-bottom: 5px;
+}
+
+#addMusicView button {
+  clear: left;
+  display: block;
+  margin-left: 41%;
+}
